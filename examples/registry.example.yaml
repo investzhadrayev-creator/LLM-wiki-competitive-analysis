@@ -1,0 +1,8 @@
+"sha256:aaa111":
+  file: "raw/lenovo-sr650-v3_2026-03.pdf"
+  doc_type: datasheet
+  doc_date: "2026-03"
+  revision: "1.4"
+  imported_at: "2026-08-13"
+  lineage_id: "lenovo-sr650-v3:datasheet:main"
+  supersedes: null

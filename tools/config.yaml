@@ -1,0 +1,24 @@
+# config.yaml — конфиг tools/. Production-схема; в Фазе A словари могут меняться
+# только вместе с записью exp-* в PIPELINES.md.
+schema_version: "3.1.1"
+
+# Доменные поля (гипотеза v2 §4.4; замораживаются по итогам Фазы A)
+domain_fields:
+  - ram_max
+  - cpu_sockets
+  - drive_bays
+  - pcie_slots
+
+# Controlled vocabulary [FIN-CGPT-002]
+measurement_basis_vocab: [total, per_socket, per_channel]
+constraint_keys: [cpu_count, dimm_population, riser_id, backplane]
+
+# Таблица unit-конверсий для DSL convert [T8]
+unit_conversion:
+  "TB->GB": 1024
+  "GB->TB": 0.0009765625
+
+# Риск-ярусный review [§9] — калибруется из pilot/phase-b-results.yaml
+review:
+  tier2_sample_n: 5        # placeholder до Фазы B
+  cohort_escalation_cap: 15
