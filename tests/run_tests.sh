@@ -2,7 +2,7 @@
 # Smoke-тесты tools/ [T2]. Запуск из корня репо: bash tests/run_tests.sh
 set -u; cd "$(dirname "$0")/.."
 # подготовка окружения из эталонов
-mkdir -p wiki outputs
+mkdir -p wiki outputs sources raw
 cp examples/registry.example.yaml sources/registry.yaml
 cp examples/lenovo-sr650-v3.md examples/lenovo-sr650-v3.candidate.md wiki/
 cp examples/derived-block-example.md outputs/
